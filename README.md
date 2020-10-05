@@ -1,5 +1,5 @@
 
-# reminder_standup
+# Reminder-Standup
 
 
-This is a tool to reminder MAC users standup after a long time sitting.
+>>>This is a tool to remind MAC users to stand up after sitting for long time either studying or working in front of laptop/desktop.
