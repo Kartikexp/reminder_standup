@@ -5,7 +5,8 @@ echo "Reminder is running!"
 while :
 do
 	currenttime=$(date +%H:%M)
-   	if [[ "$currenttime" > "08:00" ]] || [[ "$currenttime" < "22:00" ]]; then
+	echo $currenttime
+   	if [[ "$currenttime" > "08:00" ]] && [[ "$currenttime" < "11:00" ]]; then
 		osascript -e 'display notification "Standup Time!" with title "Standup for your health and your eyes!"'
 		for i in 1 2 3 4 5 6 7 8 9
 	        do
@@ -17,6 +18,7 @@ do
 
 	        echo "Standup! For your health and your eyes!"
 	else
+		echo "Its time for do not disturb mode. Try later!"
 		break
 	fi
 done
